@@ -1,3 +1,4 @@
+
 <!-- saved from url=(0029)https://kebanh.github.io/BWL/ -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Erlösrechner</title>
@@ -37,11 +38,11 @@
 			vG = vE - vKostGesamt;	
 			// Bei Gewinn unter 0, haben wir eine sogenannte Verlustzone, bitte rot markieren...
 			if (vG<0) {
-				vAusgabe = vAusgabe + "<tr><th>" + vMenge + "</th><th>"+ vKostGesamt +"</th><th>"+ vE +"</td><th style=color:Red>"+ vG +"</th><th style=color:black>" + "Verlustzone" + "</th></tr>";
+				vAusgabe = vAusgabe + "<tr><th>" + vMenge + "</th><th>"+ vKostGesamt + " €" +"</th><th>"+ vE +" €" +"</td><th style=color:Red>"+ vG + " €" +"</th><th style=color:black>" + "Verlustzone" + "</th></tr>";
 			}
 			// Bei Gewinn größer 0, haben wir einen Gewinn...
 			else {
-				vAusgabe = vAusgabe + "<tr><th>" + vMenge + "</th><th>"+ vKostGesamt +"</th><th>"+ vE +"</td><th style=color:Green>"+ vG +"</th><th style=color:black>" + "Gewinnzone" + "</th></tr>";
+				vAusgabe = vAusgabe + "<tr><th>" + vMenge + "</th><th>"+ vKostGesamt +" €" +"</th><th>"+ vE + " €" +"</td><th style=color:Green>"+ vG + " €" +"</th><th style=color:black>" + "Gewinnzone" + "</th></tr>";
 			}	
 			//Hochzählen in 1000er Schritten, damit die Schleife terminiert...
 			vMenge = vMenge + 1000;
@@ -89,4 +90,3 @@
 
 
 
-</body></html>
